@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animatsiya</title>
+  <style>
+    .block {
+            text-align: end;
+            width: 350px;
+            margin: 100px auto;
+            display: grid;
+            grid-template-rows: repeat(10, 35px);
+        }
+
+        .block .box {
+            display: flex;
+            border: 1px solid;
+            align-items: end;
+            justify-content: end;
+
+        }
+
+        .box-13 {
+            grid-row: 1/3;
+            grid-column: 1/3;
+        }
+
+        .box-9 {
+            grid-row: 1/2;
+            grid-column: 3/5;
+        }
+
+        .box-5 {
+            grid-row: 2/4;
+            grid-column: 3/4;
+        }
+
+        .box-22 {
+            grid-row: 3/4;
+            grid-column: 1/3;
+        }
+
+        .box-6 {
+            grid-row: 2/4;
+            grid-column: 4/6;
+        }
+
+
+        .box-18 {
+            grid-row: 1/1;
+            grid-column: 5/6;
+
+        }
+
+        .box-1 {
+            grid-row: 1/3;
+            grid-column: 6/8;
+        }
+
+        .box-20 {
+            grid-row: 1/1;
+            grid-column: 8/10;
+        }
+
+        .box-15 {
+            grid-row: 1/1;
+            grid-column: 10/11;
+        }
+
+        .box-8 {
+            grid-row: 3/4;
+            grid-column: 6/8;
+        }
+
+        .box-11 {
+
+            grid-row: 2/4;
+            grid-column: 8/9;
+        }
+
+        .box-3 {
+            grid-row: 2/4;
+            grid-column: 9/11;
+        }
+
+        .box-7 {
+            grid-row: 4/5;
+            grid-column: 1/1;
+        }
+
+        .box-16 {
+            grid-row: 4/5;
+            grid-column: 2/4;
+        }
+
+        .box-2 {
+            grid-row: 4/6;
+            grid-column: 4/6;
+        }
+
+        .box-19 {
+            grid-row: 4/5;
+            grid-column: 6/7;
+        }
+
+        .box-14 {
+            grid-row: 4/5;
+            grid-column: 7/9;
+        }
+
+        .box-21 {
+            grid-row: 4/6;
+            grid-column: 9/11;
+        }
+
+        .box-24 {
+            grid-row: 5/7;
+            grid-column: 1/3;
+        }
+
+        .box-17 {
+            grid-row: 5/7;
+            grid-column: 3/4;
+        }
+
+        .box-12 {
+            grid-row: 6/7;
+            grid-column: 4/6;
+        }
+
+        .box-4 {
+            grid-row: 5/7;
+            grid-column: 6/8;
+
+        }
+
+        .box-23 {
+            grid-row: 5/7;
+            grid-column: 8/9;
+        }
+
+        .box-10 {
+            grid-row: 6/7;
+            grid-column: 9/11;
+        }
+
+        .box-13,
+        .box-6,
+        .box-1,
+        .box-24,
+        .box-21,
+        .box-4,
+        .box-3,
+        .box-2 {
+            background: #2fe30b;
+            font-size: 24px;
+        }
+
+        .box-18,
+        .box-15,
+        .box-7,
+        .box-19 {
+            background: #02c4f5;
+            font-size: 12px;
+        }
+    .animes{
+        margin: 200px 500px;
+        transform: rotate(-45deg)
+
+    }
+    .line{
+        width: 200px;
+        background-color: blue;
+        height: 2px;
+        margin-left: 100px;
+        
+    }
+    .anime {
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      margin-left: 100px; /* Boshlang'ich margin */
+      animation: rotateMove 4s infinite, rotateMoveBack 1s 4s infinite;
+    }
+
+    @keyframes rotateMove {
+      0% {
+        transform: rotate(0deg);
+        margin-left: 100px;
+        
+      }
+      25% {
+        transform: rotate(90deg);
+        margin-left: 150px;
+      }
+      50% {
+        transform: rotate(180deg);
+        margin-left: 200px;
+      }
+      75% {
+        transform: rotate(270deg);
+        margin-left: 250px;
+      }
+      100% {
+        transform: rotate(360deg);
+        margin-left: 300px;
+      }
+      100% {
+        transform: rotate(0deg);
+        margin-left: 100px;
+      }
+      
+    }
+   
+
+   
+  </style>
+</head>
+<body>
+<div class="animes">
+    <div class="anime"></div>
+    <div class="line"></div>
+</div>
+<div class="block">
+    <div class="box box-1">1</div>
+    <div class="box box-2">2</div>
+    <div class="box box-3">3</div>
+    <div class="box box-4">4</div>
+    <div class="box box-5">5</div>
+    <div class="box box-6">6</div>
+    <div class="box box-7">7</div>
+    <div class="box box-8">8</div>
+    <div class="box box-9">9</div>
+    <div class="box box-10">10</div>
+    <div class="box box-11">11</div>
+    <div class="box box-12">12</div>
+    <div class="box box-13">13</div>
+    <div class="box box-14">14</div>
+    <div class="box box-15">15</div>
+    <div class="box box-16">16</div>
+    <div class="box box-17">17</div>
+    <div class="box box-18">18</div>
+    <div class="box box-19">19</div>
+    <div class="box box-20">20</div>
+    <div class="box box-21">21</div>
+    <div class="box box-22">22</div>
+    <div class="box box-23">23</div>
+    <div class="box box-24">24</div>
+
+</div>
+  
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detline</title>
+</head>
+
+<body>
+
+    <style>
+        
+    </style>
+    
+</body>
+
+</html> -->
